@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Pembayaran - Tiket Traveling Pantai Dunia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #a7c7f1, #f8b9c3);
+      text-align: center;
+      color: #333;
+    }
+
+    header {
+      margin-top: 40px;
+    }
+
+    header h1 {
+      color: #004aad;
+      margin-bottom: 5px;
+      font-size: 22px;
+    }
+
+    header p {
+      color: #fff;
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #fff;
+      max-width: 600px;
+      margin: 40px auto;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      padding: 30px;
+      text-align: left;
+    }
+
+    h2 {
+      text-align: center;
+      color: #004aad;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      margin-bottom: 25px;
+    }
+
+    .section h3 {
+      font-size: 16px;
+      color: #004aad;
+      margin-bottom: 10px;
+    }
+
+    .detail {
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .detail span {
+      float: right;
+      color: #444;
+    }
+
+    .total {
+      border-top: 1px solid #ccc;
+      margin-top: 10px;
+      padding-top: 10px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .payment-method {
+      margin-top: 25px;
+      font-size: 14px;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+
+    button {
+      width: 48%;
+      border: none;
+      padding: 10px;
+      font-size: 14px;
+      border-radius: 20px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-kembali {
+      background-color: #f3d8d8;
+      color: #333;
+    }
+
+    .btn-kembali:hover {
+      background-color: #f0c8c8;
+    }
+
+    .btn-konfirmasi {
+      background-color: #ff6e6e;
+      color: white;
+    }
+
+    .btn-konfirmasi:hover {
+      background-color: #ff4d4d;
+    }
+
+    footer {
+      text-align: center;
+      margin: 30px 0;
+      font-size: 12px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tiket Traveling Pantai Dunia</h1>
+    <p>Nikmati keindahan pantai terbaik diseluruh dunia</p>
+  </header>
+
+  <div class="container">
+    <h2>Detail Pembayaran</h2>
+
+    <div class="section">
+      <h3>Ringkasan Pesanan</h3>
+      <div class="detail">
+        Destinasi : <span>Pantai Dominika-Kosta Rika</span><br>
+        Harga Tiket : <span>Rp 3.500.000</span><br>
+        Jumlah Tiket : <span>1 Tiket</span><br>
+        Biaya Layanan : <span>Rp 50.000</span>
+        <div class="total">Total Pembayaran : <span>Rp 4.000.000</span></div>
+      </div>
+    </div>
+
+    <div class="payment-method">
+      <h3>Metode Pembayaran</h3>
+      <select>
+        <option>Kartu Kredit</option>
+        <option>Transfer Bank</option>
+        <option>E-Wallet (OVO, DANA, GoPay)</option>
+      </select>
+    </div>
+
+    <div class="buttons">
+      <button class="btn-kembali" onclick="kembali()">Kembali</button>
+      <button class="btn-konfirmasi" onclick="konfirmasi()">Konfirmasi Pembayaran</button>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Tiket Traveling Pantai Dunia. <br>By Eva Sifa Fatahilah
+  </footer>
+
+  <script>
+    function kembali() {
+      window.location.href = "detail11.html";
+    }
+
+    function konfirmasi() {
+      alert("Pembayaran berhasil dikonfirmasi! Terima kasih telah memesan 😊");
+      window.location.href = "tiket11.html";
+    }
+  </script>
+
+</body>
+</html>

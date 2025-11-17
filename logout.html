@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout - Tiket Traveling Pantai Dunia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+           background: linear-gradient(to bottom, #f8b9c3, #a7c7f1);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 400px;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .logo {
+            margin-bottom: 25px;
+        }
+        
+        .logo h1 {
+            color: #1a2a6c;
+            font-size: 24px;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+        
+        .logo p {
+            color: #666;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        
+        .logout-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(to bottom, #f8b9c3, #a7c7f1);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 25px;
+        }
+        
+        .logout-icon svg {
+            width: 40px;
+            height: 40px;
+            fill: white;
+        }
+        
+        .message {
+            margin-bottom: 30px;
+        }
+        
+        .message h2 {
+            color: #1a2a6c;
+            margin-bottom: 10px;
+            font-size: 22px;
+            font-weight: 600;
+        }
+        
+        .message p {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .btn {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-login {
+           background: linear-gradient(to bottom, #f8b9c3, #a7c7f1);
+            color: white;
+        }
+        
+        .btn-login:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(26, 42, 108, 0.4);
+        }
+        
+        .btn-home {
+            background-color: #f0f0f0;
+            color: #333;
+            border: 1px solid #ddd;
+        }
+        
+        .btn-home:hover {
+            background-color: #e0e0e0;
+        }
+        
+        .footer {
+            margin-top: 20px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+            text-align: center;
+        }
+        
+        .username {
+            color: #1a2a6c;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="logo">
+                <h1>Tiket Traveling Pantai Dunia</h1>
+                <p>Nikmati keindahan pantai terbaik di seluruh dunia</p>
+            </div>
+            
+            <div class="logout-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M17 7l-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4V5z"/>
+                </svg>
+            </div>
+            
+            <div class="message">
+                <h2>Anda Telah Logout</h2>
+                <p class="username">filhsvv</p>
+                <p>Terima kasih telah menggunakan layanan kami. Anda telah berhasil logout dari akun Anda.</p>
+            </div>
+            
+            <div class="button-group">
+                <button class="btn btn-login" onclick="window.location.href='login.html'">Login Kembali</button>
+                <button class="btn btn-home" onclick="window.location.href='menu.html'">Kembali ke Beranda</button>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

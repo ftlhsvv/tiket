@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiket Traveling Pantai Dunia</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #f8b9c3, #a7c7f1);
+      text-align: center;
+    }
+
+    header {
+      padding: 30px 10px 20px;
+    }
+
+    header img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    h1 {
+      display: inline-block;
+      color: #004aad;
+      margin: 0;
+      font-size: 24px;
+      vertical-align: middle;
+    }
+
+    p.sub {
+      color: #555;
+      font-size: 14px;
+      margin: 5px 0 25px;
+    }
+
+    .search-box {
+      width: 80%;
+      max-width: 500px;
+      margin: 0 auto 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 10px 20px;
+      border-radius: 25px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      outline: none;
+      text-align: center;
+    }
+
+    h2 {
+      color: #004aad;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto 50px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 130px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 10px;
+    }
+
+    .card h3 {
+      font-size: 14px;
+      color: #333;
+      margin: 5px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #ff7070;
+      color: white;
+      padding: 6px 14px;
+      border-radius: 15px;
+      font-size: 13px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #ff4d4d;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="y.png" alt="Avatar">
+    <h1>Tiket Traveling Pantai Dunia</h1>
+    <p class="sub">Nikmati keindahan pantai terbaik di seluruh dunia</p>
+  </header>
+
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Cari Pantai..." onkeyup="searchBeach()">
+  </div>
+
+  <h2>Jelajahi keindahan pantai dari berbagai belahan dunia!</h2>
+
+  <div class="container" id="beachContainer">
+    <div class="card">
+      <img src="1. Pantai Porto da Barra, Salvador-Brasil.jpg" alt="Pantai Porto da Barra">
+      <div class="card-body">
+        <h3>Pantai Porto da Barra, Salvador – Brazil</h3>
+        <a href="detail1.html" class="btn">Detail</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="2. Pantai Tanjung Rhu, Langkawi-Malaysia.jpg" alt="Pantai Tanjung Rhu">
+      <div class="card-body">
+        <h3>Pantai Tanjung Rhu, Langkawi – Malaysia</h3>
+        <a href="detail2.html" class="btn">Detail</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="3. Trunk Bay, St. John-U.S. Virgin Island.jpg" alt="Trunk Bay">
+      <div class="card-body">
+        <h3>Trunk Bay, St. John – U.S. Virgin Islands</h3>
+        <a href="detail3.html" class="btn">Detail</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="4. Pantai Placencia – Belize.png" alt="Pantai Placencia">
+      <div class="card-body">
+        <h3>Pantai Placencia – Belize</h3>
+        <a href="detail4.html" class="btn">Detail</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="5. Pantai Natadola-Fiji.jpg" alt="Pantai Natadola">
+      <div class="card-body">
+        <h3>Pantai Natadola – Fiji</h3>
+        <a href="detail5.html" class="btn">Detail</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="6. Polelam Beach, Goa-India.jpg" alt="Palolem Beach">
+      <div class="card-body">
+        <h3>Palolem Beach, Goa – India</h3>
+        <a href="detail6.html" class="btn">Detail</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="7. Pantai Bondi, Sydney-Australia.jpg" alt="Bondi">
+      <div class="card-body">
+        <h3>Pantai Bondi, Sydney – Australia</h3>
+        <a href="detail7.html" class="btn">Detail</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="8. Pantai Nungwi, Zanzibar-Tanzania.jpg" alt="Pantai Nungwi">
+      <div class="card-body">
+        <h3>Pantai Nungwi, Zanzibar – Tanzania</h3>
+        <a href="detail8.html" class="btn">Detail</a>
+      </div>
+    </div>
+  </div>
+    <div class="container" id="beachContainer">
+    <div class="card">
+      <img src="9. Pantai D-Day Normandy-Prancis.jpg" alt="Pantai D-Day Normandy">
+      <div class="card-body">
+        <h3>Pantai D-Day Normandy-Prancis</h3>
+        <a href="detail9.html" class="btn">Detail</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="10. Pantai Negril-Jamaika.jpg" alt="Pantai Negril">
+      <div class="card-body">
+        <h3>Pantai Negril-Jamaika</h3>
+        <a href="detail10.html" class="btn">Detail</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="11. Pantai Dominika-Kosta Rika.jpg" alt="Pantai Dominika">
+      <div class="card-body">
+        <h3>Pantai Dominika-Kosta Rika</h3>
+        <a href="detail11.html" class="btn">Detail</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="12. Pantai Kuta – Denpasar, Bali – Indonesia.jpg" alt="Pantai Kuta">
+      <div class="card-body">
+        <h3>Pantai Kuta – Denpasar, Bali – Indonesia</h3>
+        <a href="detail12.html" class="btn">Detail</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="13. Pantai Canggu, Bali-Indonesia.jpg" alt="Pantai Canggu">
+      <div class="card-body">
+        <h3>Pantai Canggu, Bali-Indonesia</h3>
+        <a href="detail13.html" class="btn">Detail</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="14. Pantai Karekare, West Auckland-Selandia Baru.jpg" alt="Pantai Karekare">
+      <div class="card-body">
+        <h3>Pantai Karekare, West Auckland-Selandia Baru</h3>
+        <a href="detail14.html" class="btn">Detail</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="15. Pantai West Bay, Roatan-Honduras.jpg" alt="Pantai West Bay">
+      <div class="card-body">
+        <h3>Pantai West Bay, Roatan-Honduras</h3>
+        <a href="detail15.html" class="btn">Detail</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="16. Pantai Bahia Solano-Kolombia.jpg" alt="Pantai Bahia">
+      <div class="card-body">
+        <h3>Pantai Bahia Solano-Kolombia</h3>
+        <a href="detail16.html" class="btn">Detail</a>
+      </div>
+    </div>
+  </div>
+  
+
+  <script>
+    function searchBeach() {
+      const input = document.getElementById("searchInput").value.toLowerCase();
+      const cards = document.querySelectorAll(".card");
+
+      cards.forEach(card => {
+        const title = card.querySelector("h3").textContent.toLowerCase();
+        card.style.display = title.includes(input) ? "block" : "none";
+      });
+    }
+  </script>
+</body>
+</html>

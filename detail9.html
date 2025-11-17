@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiket Traveling Pantai Dunia - Detail Pantai</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #f8b9c3, #a7c7f1);
+      text-align: center;
+      color: #333;
+    }
+
+    header {
+      margin-top: 30px;
+    }
+
+    header h1 {
+      color: #004aad;
+      margin-bottom: 5px;
+      font-size: 24px;
+    }
+
+    header p {
+      color: #fff;
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      background-color: white;
+      margin: 40px auto;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+
+    .pantai-img {
+      width: 50%;
+      border-radius: 15px;
+      border: 4px solid #ffb3b3;
+    }
+
+    .pantai-info {
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    .pantai-info h2 {
+      color: #004aad;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .pantai-info h3 {
+      color: #d80000;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    button {
+      border: none;
+      padding: 10px 25px;
+      border-radius: 25px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: 600;
+    }
+
+    .btn-lanjut {
+      background-color: #ff7070;
+      color: white;
+    }
+
+    .btn-lanjut:hover {
+      background-color: #ff4d4d;
+    }
+
+    .btn-kembali {
+      background-color: #eee;
+      color: #333;
+    }
+
+    .btn-kembali:hover {
+      background-color: #ddd;
+    }
+
+    .deskripsi {
+      margin-top: 25px;
+      text-align: justify;
+      line-height: 1.6;
+      font-size: 14px;
+      color: #444;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 12px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tiket Traveling Pantai Dunia</h1>
+    <p>Nikmati keindahan pantai terbaik di seluruh dunia</p>
+  </header>
+
+  <div class="container">
+    <img src="9. Pantai D-Day Normandy-Prancis.jpg" class="pantai-img" alt="Pantai D-Day Normandy">
+
+    <div class="pantai-info">
+      <h2>Pantai D-Day Normandy-Prancis</h2>
+      <h3>Rp 3.500.000</h3>
+
+      <div class="buttons">
+        <button class="btn-lanjut" onclick="lanjutPembayaran()">Lanjut Ke Pembayaran</button>
+        <button class="btn-kembali" onclick="kembali()">Kembali</button>
+      </div>
+    </div>
+
+    <div class="deskripsi">
+      <p>
+          Pantai terindah di dunia selanjutnya adalah Pantai Normandy, pantai ini berada di negara Prancis. Pada zaman dahulu pantai ini digunakan sebagai tempat pelihatn operasi militer, dan kini pantai ini dijadikan pantai yang bisa dikunjungi masyarakat.
+      </p>
+      <p>
+          Pantai ini memiliki keindahan yang begitu luar biasa, sehingga banyak sekali masyarakat kokal maupun asing yang datang kesini. Kamu bisa datang kesini bersama sahabat, keluarga dan bahkan pasangan mu.
+    </p>
+      <p>
+          Selain itu jangan lupa untuk tetap menjaga kesopanan terhadap pengunjung lainnya, karena saling menghargai satu sama lain sebagai pengunjung adalah hal yang penting. Dan pastikan jika kamu tahu berapa budget yang kamu butuhkan untuk berkunjung kesini.
+    </p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Tiket Traveling Pantai Dunia. <br>By Eva Sifa Fatahilah
+  </footer>
+
+  <script>
+    function kembali() {
+      window.location.href = "menu.html";
+    }
+
+    function lanjutPembayaran() {
+ alert("Sudah Yakin Ingin Konfirmasi?");
+      window.location.href = "pembayaran9.html";    }
+  </script>
+
+</body>
+</html>
